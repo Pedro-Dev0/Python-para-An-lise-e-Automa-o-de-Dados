@@ -18,7 +18,9 @@ for indice, linguagem in enumerate(linguagens):
 for linguagem in linguagens:
     print(linguagem)
 
+# ele só pode ser usado como iteravel através de for para percorrer esse iterador 
 
+# pop em conjuntos sempre tirar o primeiro valor
 
 
 """
