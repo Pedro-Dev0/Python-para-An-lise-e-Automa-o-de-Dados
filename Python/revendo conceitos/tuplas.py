@@ -15,7 +15,7 @@ numero_tupla = (1, 2, 3, 4, 5,)# assim também aceita
 print(numero_tupla)
 print(type(numero_tupla))
 
-pais = ("Brasil",)
+pais = ("Brasil",) # novamente virgula no final para entender que é tupla!
 print(pais)
 print(type(pais))
 
