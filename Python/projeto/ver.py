@@ -5,7 +5,7 @@ import time
 import re  # Biblioteca para tratar a ordem dos números
 
 # --- CONFIGURAÇÃO ---
-PASTA_FOTOS = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999\Livro_81_P_REFAZER'
+PASTA_FOTOS = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999\Livro_76_P_REFAZER'
 ARQUIVO_RELATORIO = 'relatorio_final_ordenado.csv'
 LIMITE_FOCO_TOLERANTE = 20 
 
