@@ -6,7 +6,7 @@ import re
 
 # --- CONFIGURAÇÃO ---
 # Basta colar o caminho da pasta do livro aqui
-PASTA_FOTOS = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999\Livro_76_P_REFAZER'
+PASTA_FOTOS = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999\Livro_75_P_REFAZER'
 LIMITE_FOCO_TOLERANTE = 20 
 
 def chave_ordenacao_natural(texto):
