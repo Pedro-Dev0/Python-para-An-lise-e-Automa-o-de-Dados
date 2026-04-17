@@ -10,7 +10,7 @@ import subprocess
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Onde estão as tuas fotos e onde salvar o relatório
-PASTA_ORIGEM = r'C:\Users\Malleus\Downloads' 
+PASTA_ORIGEM = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999\Livro_81_P_REFAZER' 
 ARQUIVO_CSV = 'relatorio_final_livros.csv'
 
 # --- 2. FUNÇÃO DE ANÁLISE TÉCNICA ---
