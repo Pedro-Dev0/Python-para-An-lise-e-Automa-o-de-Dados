@@ -5,7 +5,7 @@ import pyautogui
 from natsort import natsorted
 
 # --- CONFIGURAÇÃO ---
-PASTA_FOTOS = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999\Livro_542_P'
+PASTA_FOTOS = r'\\servidor\Dados\ADMINISTRATIVO\LIVROS DE NOTAS\Digitalizacao cartorio\0 a 999 A\Livro_857_P'
 TEMPO_ESPERA = 0.6  # Velocidade máxima: 600 milissegundos
 
 def revisao_modo_insano():
