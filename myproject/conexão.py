@@ -2,9 +2,13 @@ import sqlite3
 from pathlib import Path
 
 ROOT_PATH = Path(__file__).parent
+# ROOT_PATH usado para inclinar o banco a ser criado na mesma pasta onde está o código(tem que importar pathlib caso não tenha installe)
 
+# conexao usado para criar o banco caso não tenha e se tiver para conectar aqui a esse código para desenvolvimento do mesmo
 conexao = sqlite3.connect(ROOT_PATH / 'clientes.db')
 print(conexao)
+
+#cursor para executar ações aqui no código e essas ações serem incluidas no arquivo db
 cursor = conexao.cursor()
 print(cursor)
 
