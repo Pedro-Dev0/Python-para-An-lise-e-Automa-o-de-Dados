@@ -5,7 +5,7 @@ import pyautogui
 from natsort import natsorted
 
 # --- CONFIGURAÇÃO ---
-PASTA_FOTOS = r'\\DESKTOP-1UFML41\Digitalizacao\0 a 999\Livro_74_P_ OK'
+PASTA_FOTOS = r'\\DESKTOP-1UFML41\Digitalizacao\Enviados-migracao\_T\Livro_1077_T.zip'
 TEMPO_ESPERA = 0.6  # Velocidade máxima: 600 milissegundos
 
 def revisao_modo_insano():
