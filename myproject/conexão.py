@@ -29,8 +29,24 @@ def atualizar_dados(conexao, cursor, nome, email, id):
     cursor.execute('UPDATE clientes SET nome=?, email=? WHERE id=?;', (data))
     conexao.commit()
 
+def deletar_dados(conexao, cursor, id):
+    data = (id,)
+    cursor.execute('DELETE FROM clientes WHERE id=?;', (data))
+    conexao.commit()
+
+
+
+
+'''
 atualizar_dados(conexao, cursor, 'Pedro Henrique', 'pedro123@gmail.com', 1)
 atualizar_dados(conexao, cursor, 'Jessica Zacarias', 'jessicazaca123@gmail.com', 2)
+'''
+
+#inserir_dados(conexao, cursor, 'PEDRIMZL', 'ISA@GMAIL.COM')
+
+#deletar_dados(conexao, cursor, 3)
+
+
 
 
 
