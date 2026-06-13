@@ -57,6 +57,15 @@ listar_clientes(conexao, cursor)
 
 
 
+'''
+def listar_clientes(conexao, cursor):
+    cursor.row_factory = sqlite3.Row # padrao e após isso print com dict para converter em dicionario(nesse exemplo deu errado)
+    cursor.execute('SELECT * FROM clientes;')
+    result = cursor.fetchall()
+    print(dict(result))
+    conexao.commit()
+
+'''
 
 
 
