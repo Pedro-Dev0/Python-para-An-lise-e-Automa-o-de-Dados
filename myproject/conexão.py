@@ -38,6 +38,25 @@ def inserir_varios_dados(conexao, cursor, lista):
     cursor.executemany('INSERT INTO clientes (nome, email) VALUES (?,?);', lista)
     conexao.commit()
 
+def recuperar_cliente(conexao, cursor, id):
+    data = (id,)
+    cursor.execute('SELECT * FROM clientes WHERE id=?;', (data))
+    result = cursor.fetchone()
+    print(result)
+    conexao.commit()
+
+def listar_clientes(conexao, cursor):
+    cursor.execute('SELECT * FROM clientes;')
+    result = cursor.fetchall()
+    print(result)
+    conexao.commit()
+
+listar_clientes(conexao, cursor)
+
+
+
+
+
 
 
 
