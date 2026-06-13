@@ -34,6 +34,12 @@ def deletar_dados(conexao, cursor, id):
     cursor.execute('DELETE FROM clientes WHERE id=?;', (data))
     conexao.commit()
 
+def inserir_varios_dados(conexao, cursor, lista):
+    cursor.executemany('INSERT INTO clientes (nome, email) VALUES (?,?);', lista)
+    conexao.commit()
+
+
+
 
 
 
@@ -46,7 +52,15 @@ atualizar_dados(conexao, cursor, 'Jessica Zacarias', 'jessicazaca123@gmail.com',
 
 #deletar_dados(conexao, cursor, 3)
 
+'''
+lista = [
+    ('isa', 'isa@gmail.com'),
+    ('pedro', 'pedro@gmail.com'),
+    ('jessica', 'jessica@gmail.com')
+]
 
+inserir_varios_dados(conexao, cursor, lista)
+'''
 
 
 
