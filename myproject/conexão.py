@@ -21,17 +21,17 @@ def criar_tabela(conexao, cursor):
 
 def inserir_dados(conexao, cursor, nome, email):
     data = (nome, email)
-    cursor.execute('INSERT INTO clientes (nome, email) VALUES (?,?);', (data))
+    cursor.execute('INSERT INTO clientes (nome, email) VALUES (?,?);', (data,))
     conexao.commit()
 
 def atualizar_dados(conexao, cursor, nome, email, id):
     data = (nome, email, id)
-    cursor.execute('UPDATE clientes SET nome=?, email=? WHERE id=?;', (data))
+    cursor.execute('UPDATE clientes SET nome=?, email=? WHERE id=?;', (data,))
     conexao.commit()
 
 def deletar_dados(conexao, cursor, id):
     data = (id,)
-    cursor.execute('DELETE FROM clientes WHERE id=?;', (data))
+    cursor.execute('DELETE FROM clientes WHERE id=?;', (data,))
     conexao.commit()
 
 def inserir_varios_dados(conexao, cursor, lista):
@@ -40,7 +40,7 @@ def inserir_varios_dados(conexao, cursor, lista):
 
 def recuperar_cliente(conexao, cursor, id):
     data = (id,)
-    cursor.execute('SELECT * FROM clientes WHERE id=?;', (data))
+    cursor.execute('SELECT * FROM clientes WHERE id=?;', (data,))
     result = cursor.fetchone()
     print(result)
     conexao.commit()
@@ -92,3 +92,4 @@ inserir_varios_dados(conexao, cursor, lista)
 
 
 
+# parte prática de segurança em SQL evite concatenação e consultar parametrizadas
